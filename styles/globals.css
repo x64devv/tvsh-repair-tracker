@@ -1,0 +1,19 @@
+/* App-level overrides layered on top of the Organic design system.
+   Keep this file small — Organic is the source of truth for the look. */
+
+:root {
+  /* next/font supplies the families; keep the Organic token names intact so
+     every `var(--font-heading)` / `var(--font-body)` in the design still works. */
+  --font-heading: var(--font-caprasimo), system-ui, sans-serif;
+  --font-body: var(--font-figtree), system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+a { color: var(--color-accent-700); }
+a:hover { color: var(--color-accent-600); }
